@@ -3,12 +3,12 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'interesting_methods/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'interesting-methods'
+  spec.name          = 'interesting_methods'
   spec.version       = InterestingMethods::VERSION
   spec.authors       = ['Sean Lerner']
   spec.email         = ['sean@@smallcity.ca']
   spec.summary       = 'See relevant methods in your repl by adding .im to any object'
-  spec.homepage      = 'https://github.com/seanlerner/interesting-methods'
+  spec.homepage      = 'https://github.com/seanlerner/interesting_methods'
   spec.license       = 'MIT'
   spec.require_paths = ['lib']
 

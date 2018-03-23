@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    interesting-methods (0.1.0)
+    interesting_methods (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -51,7 +51,7 @@ DEPENDENCIES
   bundler (~> 1.16)
   guard (~> 2.14)
   guard-minitest (~> 2.4)
-  interesting-methods!
+  interesting_methods!
   minitest (~> 5.0)
   pry (~> 0.11)
   rake (~> 10.0)

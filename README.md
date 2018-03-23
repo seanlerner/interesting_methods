@@ -47,7 +47,7 @@ The gem meant to exist in your `.irbrc` and `.pryrc` so it will always be loaded
 First install the gem from the command line:
 
 ```shell
-gem install interesting-methods
+gem install interesting_methods
 ```
 
 Then create irb and pry rc files if they already exist:
@@ -60,12 +60,12 @@ touch ~/.pryrc
 Edit those files and add the following code:
 
 ```
-# This will re-install interesting-methods in case you switch to another ruby on your system that doesn't yet have it installed
-unless Gem::Specification.find_all_by_name('interesting-methods').any?
-  exec('gem install interesting-methods')
+# This will re-install interesting_methods in case you switch to another ruby on your system that doesn't yet have it installed
+unless Gem::Specification.find_all_by_name('interesting_methods').any?
+  exec('gem install interesting_methods')
 end
 
-require 'interesting-methods'
+require 'interesting_methods'
 ```
 
 ## Usage
@@ -86,7 +86,7 @@ You can run `bin/console` for an interactive prompt that will allow you to exper
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/seanlerner/interesting-methods.
+Bug reports and pull requests are welcome on GitHub at https://github.com/seanlerner/interesting_methods.
 
 ## License
 
