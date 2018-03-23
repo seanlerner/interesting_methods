@@ -44,7 +44,7 @@ The gem meant to exist in your `.irbrc` and `.pryrc` so it will always be loaded
 
 ## Installation
 
-Create irb and pry rc files if they already exist:
+Create irb and pry rc files if they don't already exist:
 
 ```shell
 touch ~/.irbrc
