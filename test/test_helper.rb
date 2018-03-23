@@ -1,4 +1,7 @@
-$LOAD_PATH.unshift File.expand_path("../../lib", __FILE__)
-require "interesting_methods"
-
-require "minitest/autorun"
+require 'minitest/autorun'
+require 'interesting_methods'
+require 'test_objects/animal'
+require 'test_objects/colours'
+require 'test_objects/pig'
+require 'test_objects/pig_with_colours_extended'
+require 'test_objects/pig_with_colours_included'

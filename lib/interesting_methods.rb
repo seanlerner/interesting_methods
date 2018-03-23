@@ -1,5 +1,19 @@
-require "interesting_methods/version"
+class Object
 
-module InterestingMethods
-  # Your code goes here...
+  def im
+    interesting_methods
+  end
+
+  def interesting_methods
+    if self.class == Module
+      (singleton_methods + instance_methods).sort
+    else
+      (public_methods - Object.methods).sort
+    end
+  end
+
+  def self.interesting_methods
+    (public_methods - Object.methods).sort
+  end
+
 end
