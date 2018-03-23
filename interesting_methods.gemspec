@@ -1,5 +1,6 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+
 require 'interesting_methods/version'
 
 Gem::Specification.new do |spec|
@@ -10,6 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary       = 'See relevant methods in your repl by adding .im to any object'
   spec.homepage      = 'https://github.com/seanlerner/interesting_methods'
   spec.license       = 'MIT'
+  spec.files         = `git ls-files`.split.reject { |f| f.match('test') }
   spec.require_paths = ['lib']
 
   spec.add_development_dependency 'bundler',        '~> 1.16'
