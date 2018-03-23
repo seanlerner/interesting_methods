@@ -49,7 +49,7 @@ touch ~/.pryrc
 
 Edit those files and add the following code:
 
-```
+```ruby
 # This will install interesting_methods if it's not yet installed
 unless Gem::Specification.find_all_by_name('interesting_methods').any?
   system('gem install interesting_methods')
