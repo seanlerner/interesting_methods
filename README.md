@@ -33,24 +33,14 @@ These will show you the more useful methods on that object.
 This Gem wraps the above techniques into a simple `.im` that you can call on any object (class, instance, module) and it will show the appropriate interesting methods:
 
 ```
-MyObject.im
+MyClass.im
 my_instance.im
 MyModule.im
 ```
 
----
-
-The gem meant to exist in your `.irbrc` and `.pryrc` so it will always be loaded into your repl environments.
-
 ## Installation
 
-First install the gem from the command line:
-
-```shell
-gem install interesting_methods
-```
-
-Then create irb and pry rc files if they already exist:
+Create irb and pry rc files if they don't already exist:
 
 ```shell
 touch ~/.irbrc
@@ -59,18 +49,21 @@ touch ~/.pryrc
 
 Edit those files and add the following code:
 
-```
-# This will re-install interesting_methods in case you switch to another ruby on your system that doesn't yet have it installed
+```ruby
+# This will install interesting_methods if it's not yet installed
 unless Gem::Specification.find_all_by_name('interesting_methods').any?
-  exec('gem install interesting_methods')
+  system('gem install interesting_methods')
 end
 
 require 'interesting_methods'
 ```
 
+The first time you go into `irb` or `pry`, the gem will be installed. 
+
 ## Usage
 
-When you're in `irb` or `pry`, add `.im` to any object to see the interesting methods available to you.
+Load up either `irb` or `pry` from your command line.
+Add `.im` to any object to see its interesting methods.
 
 ## Caveat
 
@@ -91,3 +84,10 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/seanle
 ## License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
+## Credit
+
+Having `interesting_methods` available in your repl is something ruby programmers have been doing for a while. I think I first came across it years ago in a stackoverflow post. Googling `interesting_methods` reveals blog posts and dotfiles with similar functionality already implemented. AFAIK this is the first time its been packaged up in a gem.
+
+Sean Lerner<br>
+https://smallcity.ca
