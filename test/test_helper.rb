@@ -1,5 +1,6 @@
 require 'minitest/autorun'
 require 'interesting_methods'
+require 'interesting_methods/version'
 require 'test_objects/animal'
 require 'test_objects/colours'
 require 'test_objects/pig'
