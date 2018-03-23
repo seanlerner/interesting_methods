@@ -33,7 +33,7 @@ These will show you the more useful methods on that object.
 This Gem wraps the above techniques into a simple `.im` that you can call on any object (class, instance, module) and it will show the appropriate interesting methods:
 
 ```
-MyObject.im
+MyClass.im
 my_instance.im
 MyModule.im
 ```
