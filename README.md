@@ -58,9 +58,12 @@ end
 require 'interesting_methods'
 ```
 
+The first time you go into `irb` or `pry`, the gem will be installed. 
+
 ## Usage
 
-When you're in `irb` or `pry`, add `.im` to any object to see the interesting methods available to you.
+Load up either `irb` or `pry` from your command line.
+Add `.im` to any object to see its interesting methods.
 
 ## Caveat
 
