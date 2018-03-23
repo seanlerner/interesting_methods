@@ -38,10 +38,6 @@ my_instance.im
 MyModule.im
 ```
 
----
-
-The gem meant to exist in your `.irbrc` and `.pryrc` so it will always be loaded into your repl environments.
-
 ## Installation
 
 Create irb and pry rc files if they don't already exist:
