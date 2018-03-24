@@ -31,9 +31,9 @@ MyModule.instance_methods
 The `interesting_methods` gem wraps the above techniques into a simple `.im` method that you can call on any object (class, instance, module) and display the methods you want:
 
 ```
-MyClass.im
-my_instance.im
-MyModule.im
+MyClass.im       # [:my_class_method_a, :my_class_method_b]
+my_instance.im   # [:my_instance_method_a, :my_instance_method_b]
+MyModule.im      # [:my_module_method_a, :my_module_method_b]
 ```
 
 ## Installation
@@ -66,10 +66,10 @@ You're all set up now!
 Load up either `irb` or `pry` from your command line.
 Add `.im` to any object to see its interesting methods.
 
-## Examples
+### Examples
 
-- <http://smallcity.ca/2018/03/23/interesting-methods-gem> (blog post)
-- <http://smallcity.ca/2018/03/23/method-driven-development> (screencast)
+- <http://smallcity.ca/2018/03/23/interesting-methods-gem> (blog post with examples)
+- <http://smallcity.ca/2018/03/23/method-driven-development> ('Method Driven Development' screencast using gem)
 
 ## Caveat
 
