@@ -1,21 +1,21 @@
 # Interesting Methods
 
-This gem lets you add `.im` to any object in ruby to see the interesting methods.
+This gem lets you add `.im` to any object in Ruby to see the interesting methods.
 
 `.im` stands for 'Interesting Methods'.
 
-Without this Gem, to find out an Object's methods, you might try this:
+Without this gem, to find out an object's methods, you might try this:
 
 ```ruby
 MyClass.methods
 my_instance.methods
 ```
 
-Each of those would show you all of the objects method's, including all those it's inherited, which may be too much to wade through to find what you're after.
+Each of these statements would show you all of the object's methods, including all of the inherited methods. Which means it can be difficult to quickly find what you're after. 
 
 ---
 
-In order to see just the interesting methods, you might try one of these instead:
+To see just the interesting methods, try one of these statements instead:
 
 ```ruby
 MyClass.methods - Object.methods
@@ -26,11 +26,12 @@ MyModule.singleton_methods
 MyModule.instance_methods
 ```
 
-These will show you the more useful methods on that object.
+SASHA STARTS HERE
+You'll see the more useful methods on that object.
 
 ---
 
-This Gem wraps the above techniques into a simple `.im` that you can call on any object (class, instance, module) and it will show the appropriate interesting methods:
+This Gem wraps the above techniques into a simple `.im` method that you can call on any object (class, instance, module) and it will show the appropriate interesting methods:
 
 ```
 MyClass.im
