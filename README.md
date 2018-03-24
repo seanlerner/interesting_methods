@@ -68,6 +68,11 @@ You're all set up now!
 Load up either `irb` or `pry` from your command line.
 Add `.im` to any object to see its interesting methods.
 
+## Examples
+
+- <http://smallcity.ca/2018/03/23/interesting-methods-gem> (blog post)
+- <http://smallcity.ca/2018/03/23/method-driven-development> (screencast)
+
 ## Caveat
 
 This gem is not meant to be used in production as it monkey patches Ruby's core `Object` class.
