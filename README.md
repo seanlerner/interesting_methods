@@ -28,7 +28,7 @@ MyModule.instance_methods
 
 ---
 
-The Interesting Methods gem wraps the above techniques into a simple `.im` method that you can call on any object (class, instance, module) and display the methods you want:
+The `interesting_methods` gem wraps the above techniques into a simple `.im` method that you can call on any object (class, instance, module) and display the methods you want:
 
 ```
 MyClass.im
