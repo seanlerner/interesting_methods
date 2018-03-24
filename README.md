@@ -43,8 +43,8 @@ First install the gem:
 ```shell
 gem install interesting_methods
 ```
-SHOULD IT BE `irb` and `pry`????
-Then create irb and pry rc files if they don't already exist:
+
+Then create `irb` and `pry` *rc* files if they don't already exist:
 
 ```shell
 touch ~/.irbrc
@@ -83,7 +83,7 @@ You can run `guard` for a continuous test runner.
 
 You can run `bin/console` for an interactive prompt that will allow you to experiment.
 
-## Contribute
+## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/seanlerner/interesting_methods.
 
