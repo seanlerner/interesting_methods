@@ -12,6 +12,14 @@ module Colours
     '#0000FF'
   end
 
+  def double_vision
+    'hola'
+  end
+
+  def self.double_vision
+    'hola'
+  end
+
   def self.class_red
     'rgb(255, 0, 0)'
   end

@@ -6,7 +6,7 @@ class Object
 
   def interesting_methods
     if self.class == Module
-      (singleton_methods + instance_methods).sort
+      (singleton_methods + instance_methods).uniq.sort
     else
       (public_methods - Object.methods).sort
     end

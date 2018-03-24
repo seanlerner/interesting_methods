@@ -59,6 +59,7 @@ class InterestingMethodsTest < Minitest::Test
   def test_extended_class
     expected = [
       :all,
+      :double_vision,
       :instance_blue,
       :instance_green,
       :instance_red,
@@ -76,6 +77,7 @@ class InterestingMethodsTest < Minitest::Test
       :a,
       :b,
       :c,
+      :double_vision,
       :instance_blue,
       :instance_green,
       :instance_red,
@@ -93,6 +95,7 @@ class InterestingMethodsTest < Minitest::Test
       :class_blue,
       :class_green,
       :class_red,
+      :double_vision,
       :instance_blue,
       :instance_green,
       :instance_red
