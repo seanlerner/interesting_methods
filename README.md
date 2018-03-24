@@ -40,25 +40,28 @@ MyModule.im
 
 ## Installation
 
-Create irb and pry rc files if they don't already exist:
+First install the gem:
+
+```shell
+gemm install interesting_methods
+```
+
+Then create irb and pry rc files if they don't already exist:
 
 ```shell
 touch ~/.irbrc
 touch ~/.pryrc
 ```
 
-Edit those files and add the following code:
+Edit each of those `rc` files and add the following code:
 
 ```ruby
-# This will install interesting_methods if it's not yet installed
-unless Gem::Specification.find_all_by_name('interesting_methods').any?
-  system('gem install interesting_methods')
+if Gem::Specification.find_all_by_name('interesting_methods').any?
+  require 'interesting_methods'
 end
-
-require 'interesting_methods'
 ```
 
-The first time you go into `irb` or `pry`, the gem will be installed. 
+You're all set up now!
 
 ## Usage
 
@@ -90,4 +93,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 Having `interesting_methods` available in your repl is something ruby programmers have been doing for a while. I think I first came across it years ago in a stackoverflow post. Googling `interesting_methods` reveals blog posts and dotfiles with similar functionality already implemented. AFAIK this is the first time its been packaged up in a gem.
 
 Sean Lerner<br>
-https://smallcity.ca
+http://smallcity.ca
