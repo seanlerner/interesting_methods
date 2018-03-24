@@ -93,4 +93,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 Having `interesting_methods` available in your repl is something ruby programmers have been doing for a while. I think I first came across it years ago in a stackoverflow post. Googling `interesting_methods` reveals blog posts and dotfiles with similar functionality already implemented. AFAIK this is the first time its been packaged up in a gem.
 
 Sean Lerner<br>
-https://smallcity.ca
+http://smallcity.ca
