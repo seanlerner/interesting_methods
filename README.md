@@ -11,11 +11,11 @@ MyClass.methods
 my_instance.methods
 ```
 
-Each of these statements would show you all of the object's methods, including all of the inherited methods. Which means it can be difficult to quickly find what you're after. 
+The problem? Because each of these statements show you all of the object's methods, including the inherited methods, it can be hard to find what you're after. 
 
 ---
 
-To see just the interesting methods, try one of these statements instead:
+To see only the interesting methods on an object, try one of these statements instead:
 
 ```ruby
 MyClass.methods - Object.methods
@@ -26,12 +26,9 @@ MyModule.singleton_methods
 MyModule.instance_methods
 ```
 
-SASHA STARTS HERE
-You'll see the more useful methods on that object.
-
 ---
 
-This Gem wraps the above techniques into a simple `.im` method that you can call on any object (class, instance, module) and it will show the appropriate interesting methods:
+The Interesting Methods gem wraps the above techniques into a simple `.im` method that you can call on any object (class, instance, module) and display the methods you want:
 
 ```
 MyClass.im
@@ -44,9 +41,9 @@ MyModule.im
 First install the gem:
 
 ```shell
-gemm install interesting_methods
+gem install interesting_methods
 ```
-
+SHOULD IT BE `irb` and `pry`????
 Then create irb and pry rc files if they don't already exist:
 
 ```shell
@@ -86,7 +83,7 @@ You can run `guard` for a continuous test runner.
 
 You can run `bin/console` for an interactive prompt that will allow you to experiment.
 
-## Contributing
+## Contribute
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/seanlerner/interesting_methods.
 
@@ -96,7 +93,7 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Credit
 
-Having `interesting_methods` available in your repl is something ruby programmers have been doing for a while. I think I first came across it years ago in a stackoverflow post. Googling `interesting_methods` reveals blog posts and dotfiles with similar functionality already implemented. AFAIK this is the first time its been packaged up in a gem.
+Having `interesting_methods` available in your repl is something Ruby programmers have been doing for a while. I think I first came across it years ago in a stackoverflow post. Google `interesting_methods`and you'll find blog posts and dotfiles with similar functionality already implemented. AFAIK this is the first time its been packaged up in a gem.
 
 Sean Lerner<br>
 http://smallcity.ca
